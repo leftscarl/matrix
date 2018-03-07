@@ -1,0 +1,8 @@
+.cdcToolbarOption { text-align: center; display: table-cell;}
+.cdcToolbarOption .cdcToolbarOptionMenu { position: relative; display: inline-block; opacity: 0}
+.cdcToolbarOption .cdcToolbarOptionMenu > ul { position: absolute; background-color: #ffffff; padding: 10px; border-radius: 10px; top: 10px; right: 50%; border: 1px solid #bbbbbb}
+.cdcToolbarOption .cdcToolbarOptionMenu > ul > li { line-height: 1.3em; font-size: 1.2em; border-bottom: 1px solid #555555; list-style: none; padding: 5px 20px;text-align: left}
+.cdcToolbarOption .cdcToolbarOptionMenu > ul > li:last-child { border-bottom: 0px; }
+
+.cdcToolbarOption:hover .cdcToolbarOptionMenu { opacity: 1; }
+.cdcToolbarOption .cdcToolbarOptionMenu { transition: opacity 0.2s;  }

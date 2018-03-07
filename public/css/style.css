@@ -1,0 +1,25 @@
+/*** SIZES AND POSITIOINS ***/
+/* Main blocks */
+#top, #body {width: inherit; display: table; width: 100vw; }
+#top > div, #body > div {display: table-cell;}
+
+#top { height: 150px; }
+#body {height: calc( 100vh - 150px);}
+#logo, #toolbarLeft { width: 300px;}
+#mainContainer { height: inherit; position: relative;}
+.centerVerHor { display: flex;justify-content: center; align-items: center; height: inherit;}
+
+
+/* Toolbars */
+#toolbarTop { vertical-align: middle; padding: 0 50px; }
+#toolbarTop > div { width: 100%; display: table;}
+
+/* splashScreen */
+#splashScreen, #splashScreenMain { position: absolute; width: 100%; height: 100%; top: 0; right: 0; background-color: #ffffff; z-index: 99999;}
+
+/* APPEARANCE */
+.cdcToolbar { background-color: #D3ECEC; }
+#logo { background-color: #AFDDDE; vertical-align: middle}
+#logo > p {text-align: center;font-size: 27px;font-family: arial;}
+
+.colorGreen { color: #35A67B; }
