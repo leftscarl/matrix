@@ -50,7 +50,7 @@ class RestController extends AbstractActionController{
       else{ return $this->dieAction(0,'internal error'); }
     }
     if( $this->debug ){
-      $this->setNextAction("DBG");
+      $this->status->setNext("DBG");
       $debug = $this->call();
       $this->JSONdata->merge($debug);
     }

@@ -60,7 +60,11 @@ class RestState{
   }
   public function setNext( $action = "", $page = "" ){
     $this->nextAction = $action;
-    $this->nextPage = $page;
+    if( !empty($page) ):
+      $this->nextPage = $page;
+    else:
+      $this->nextPage = $action;
+    endif;
   }
   public function getNextAction(){ return $this->nextAction; }
   public function getNextPage(){ return $this->nextPage; }
